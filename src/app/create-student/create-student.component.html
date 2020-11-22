@@ -1,0 +1,27 @@
+<div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <div class="card" style="padding: 20px;">
+        <div class="card-body">
+            <form class="form" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">Student Name</label>
+                    <input type="text" placeholder="Student Name" name="name" [(ngModel)]="studentName"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Student Mobile</label>
+                    <input type="number" placeholder="Student Mobile Number" name="mobile"
+                        [(ngModel)]="studentMobileNumber" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">Student Address</label>
+                    <textarea type="text" placeholder="Student Address" name="address" [(ngModel)]="studentAddress"
+                        class="form-control">
+                    </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Create Srudent</button>
+                </div>
+             </form>
+           
+        </div>
+    </div>
+</div>
